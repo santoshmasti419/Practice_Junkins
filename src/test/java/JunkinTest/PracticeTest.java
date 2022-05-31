@@ -33,6 +33,9 @@ public class PracticeTest {
 			driver = new ChromeDriver();
 			break;
 		}
+
+		//		WebDriverManager.chromedriver().setup();
+		//		ChromeDriver driver = new ChromeDriver();
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("admin");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin");
 		driver.findElement(By.xpath("//input[@id='submitButton']")).click();
@@ -40,14 +43,14 @@ public class PracticeTest {
 		driver.findElement(By.xpath("//img[@src='themes/softed/images/btnL3Add.gif']")).click();
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(" Testyantraaaaaa");
 		driver.findElement(By.xpath("//input[@class='crmbutton small save']")).click();
-		
+
 		WebElement mouseover = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
-		
+
 		Actions act = new Actions(driver);
 		act.moveToElement(mouseover).perform();
-		
+
 		driver.findElement(By.xpath("//a[.='Sign Out']")).click();	
-		
+
 	}
 
 }
