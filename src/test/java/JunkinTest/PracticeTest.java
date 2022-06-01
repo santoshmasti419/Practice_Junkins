@@ -33,7 +33,7 @@ public class PracticeTest {
 			driver = new ChromeDriver();
 			break;
 		}
-
+                //changes from santhoshb2
 		//		WebDriverManager.chromedriver().setup();
 		//		ChromeDriver driver = new ChromeDriver();
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("admin");
