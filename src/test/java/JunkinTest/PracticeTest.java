@@ -14,7 +14,7 @@ public class PracticeTest {
 	@Test
 	public void practice()
 	{
-		//again changes from dhanrajb1
+		//again changes from santosh
 		WebDriver driver;
 		String browser = System.getProperty("broswer");
 		switch (browser)
@@ -34,8 +34,6 @@ public class PracticeTest {
 			driver = new ChromeDriver();
 			break;
 		}
-                //changes from santhoshb2
-		//2nd change from b2
 		//		WebDriverManager.chromedriver().setup();
 		//		ChromeDriver driver = new ChromeDriver();
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("admin");
